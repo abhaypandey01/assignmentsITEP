@@ -20,7 +20,7 @@ class Test{
             } else if((age >= 20) && (age < 40)){
                 System.out.println("You will work in urban areas.");
             } else {
-                System.out.println("");
+                System.out.println("ERROR");
             }
         }
     }
