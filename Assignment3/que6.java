@@ -10,6 +10,5 @@ class Test{
         if(num < 0) absvalue = -num;
         else absvalue = num;
         System.out.println("Absolute value = "+ absvalue);
-
         }
     }
