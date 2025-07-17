@@ -10,7 +10,7 @@ class Test{
         float bonus = 0.05f;
         float net_bonus;
 
-        if(years > 5){
+        if(years >= 5){
             net_bonus = salary * bonus;
             System.out.println("Net bonus will be: "+ net_bonus);
         } else {

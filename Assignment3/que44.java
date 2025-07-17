@@ -13,10 +13,10 @@ class Test{
                 System.out.println("Result of sum: "+ (a+b));
                 break;
             case ">":
-                System.out.println("Result of greater than check: "+ (a>b));
+                System.out.println("A is greater than B: "+ (a>b));
                 break;
             case "==":
-                System.out.println("Result of equality check: "+ (a==b));
+                System.out.println("A equals to B: "+ (a==b));
                 break;
             default:
                 System.out.println("Invalid choice");

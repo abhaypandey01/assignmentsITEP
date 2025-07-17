@@ -11,7 +11,7 @@ class Test{
             System.out.println("Loss of "+ loss);
         } else {
             int profit = sellPrice - costPrice;
-            System.out.println("Loss of "+ profit);
+            System.out.println("Profit of "+ profit);
         }
     }
 }

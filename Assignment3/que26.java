@@ -9,14 +9,8 @@ class Test{
             case 0:
                 System.out.println(num + " is even.");
                 break;
-            case 1:
-                System.out.println(num + " is odd.");
-                break;
-            case -1:
-                System.out.println(num + " is odd.");
-                break;
             default:
-                System.out.println("Invalid input.");
+                System.out.println(num + " is odd.");
         }
     }
 }
