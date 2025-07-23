@@ -9,11 +9,9 @@ class Test {
         System.out.println("Enter second number:");
         n2 = sc.nextInt();
         
-        int f1 = 1, f2 = 1;
+        // int f1 = 1, f2 = 1;
         while((i <= n1) || (i <= n2)){
-            if(n1%i==0) f1 = i;
-            if(n2%i==0) f2 = i;
-            if(f1 == f2) gcd = f2;
+            if(n1%i==0 && n2%i==0) gcd = i;
             i++;
         }
 
