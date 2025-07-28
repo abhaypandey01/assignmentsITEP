@@ -7,7 +7,10 @@ class Test{
 
         for(int i = n; i >= 1; i--){
             for(int j = 1; j <= i; j++){
-                System.out.print("*");
+                if(j == i || j == 1 || i == n)
+                System.out.print(i);
+                else
+                System.out.print(" ");
             }
             System.out.println();
         }
