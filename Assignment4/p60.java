@@ -7,6 +7,7 @@ class Test{
         System.out.println("Enter number 2:");
         int b = sc.nextInt();
         int num = a;
+        float sqrtNum;
 
         System.out.printf("Squares from %d to %d : \n", a, b);
 
@@ -16,8 +17,8 @@ class Test{
         }
             System.out.println();
 
-            System.out.printf("Cubes from %d to %d : \n", a, b);
             a = num;
+            System.out.printf("Cubes from %d to %d : \n", a, b);
 
             while(a <= b){
             System.out.print(" " + (a*a*a));
@@ -25,11 +26,12 @@ class Test{
         }
             System.out.println();
 
-            System.out.printf("Square roots from %d to %d : \n", a, b);
             a = num;
+            System.out.printf("Square roots from %d to %d : \n", a, b);
 
             while(a <= b){
-            System.out.print(" " + (Math.sqrt(a)));
+                sqrtNum = (float)(Math.sqrt(a));
+            System.out.printf(" %.3f", sqrtNum);
             a++;
         }
             System.out.println();

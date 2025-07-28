@@ -9,6 +9,5 @@ class Test {
             System.out.print((i*2+1) + " ");
         }
         System.out.println();
-
     }
 }

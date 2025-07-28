@@ -10,6 +10,7 @@ class Test {
         while(n != 0){
             int digit = n %10;
             rev  = rev * 10 + digit;
+            if(digit == 0 && rev == 0) System.out.print("0");
             n/=10;
         }
 

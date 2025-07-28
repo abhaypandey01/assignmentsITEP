@@ -4,10 +4,14 @@ class Test {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter n: ");
         int n = sc.nextInt();
-        int i = -n;
-        while(i <= n){
-            System.out.println(i*3);
-            i++;
+
+        for(int i = 1; i <= n; i++){
+            System.out.println("*");
+            for(int j = 1; j <= i; j++){
+            System.out.print(" ");
+            }
         }
+        System.out.println();
+
     }
 }

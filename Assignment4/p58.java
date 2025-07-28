@@ -4,21 +4,19 @@ class Test{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter decimal number:");
         int n = sc.nextInt();
-        int decimal = 0;
-        int rev = 0;
-        
+        String str = "", decimal = "";
+
         while(n != 0){
             int digit = n%2;
-            rev = rev * 10 + digit;
+            str += digit;
             n/=2;
         }
 
-        while(rev != 0){
-            int digit = rev % 10;
-            decimal = decimal * 10 + digit;
-            rev/=10;
+        for(int i = str.length()-1; i >= 0; i--){
+            decimal += str.charAt(i);
         }
 
-        System.out.println("Decimal form is " + decimal);
+        System.out.println("Binary form : " + decimal);
+
     }
 }

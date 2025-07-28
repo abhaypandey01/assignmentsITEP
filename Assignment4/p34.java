@@ -6,8 +6,8 @@ class Test {
         int n = sc.nextInt();
         int i = 1, sum = 0;
         
-        while(i <= n/2){
-            if(n % i == 0) sum += i;
+        while(i <= n){
+            if(n % i == 0 && i < n) sum += i;
             i++;
         }
 
