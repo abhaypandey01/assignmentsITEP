@@ -12,17 +12,18 @@ class Test{
         System.out.println("\nEnter element you want to search index of : ");
         int element = sc.nextInt(), low = 0, high = n -1;
         boolean flag = false;
+        int mid;
 
         while(low <= high){
-            int mid = (low + high)/2;
+            mid = (low + high)/2;
             if(arr[mid] == element){
                 System.out.println("Element found at index " + (mid + 1));
                 flag = true;
                 break;
             } else if(arr[mid] > element){
-                high -= 1;
+                high = mid - 1;
             } else {
-                low += 1;
+                low = mid + 1;
             }
         }
         if(!flag){

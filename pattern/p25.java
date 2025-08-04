@@ -4,7 +4,6 @@ class Test{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter n : ");
         int n = sc.nextInt();
-        char ch = 97;
 
         for(int i = 1; i <= n; i++){
             for(int j = 0; j < i; j++){

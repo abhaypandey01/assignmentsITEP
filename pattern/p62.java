@@ -6,11 +6,11 @@ class Test{
         int n = sc.nextInt();
 
         for(int i = 1; i <= n; i++){
-                for(int j = n - i; j >= 1; j--){
+                for(int j = 0; j < i; j++){
                     System.out.print(" ");
                 }
                 char ch = 'A';
-                for(int j = 1; j <= i; j++){
+                for(int j = 1; j <= n-i+1; j++){
                     System.out.print(ch);
                     ch++;
                 }
