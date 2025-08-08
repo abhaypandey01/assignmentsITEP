@@ -16,12 +16,16 @@ class Test{
             System.out.println("Element "+ (i+1)+ " : " + arr[i]);
         }
 
-        int cnt = 0, k = 2;
-        for(int i = 0; i < n - 1; i++){
-            for(int j = i + 1; j < n; j++ ){
-                if(arr[i] + arr[j] == k) cnt++;
+        for(int i = 0; i < n; i++){
+            boolean flag = false;
+            for(int j = i + 1; j < n; j++){
+                if(arr[j] == arr[i]) flag = true;
+            }
+            if(flag){
+                System.out.println("The first repeating element is " + arr[i]);
+                break;
             }
         }
-        System.out.println("The count of pairs with sum " + k + " is " + cnt);
+
     }
 }

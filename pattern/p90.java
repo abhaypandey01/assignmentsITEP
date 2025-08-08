@@ -6,17 +6,18 @@ class Test {
         System.out.print("Enter n : ");
         int n = sc.nextInt();
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             // Print leading spaces for formatting
-            for (int j = 0; j < n - i - 1; j++) {
+            for (int j = 0; j < n - i; j++) {
                 System.out.print(" ");
             }
 
-            int value;
-            for (int k = 0; k <= 2*i-1; k++) {
-                value = k+1;
-                System.out.print(value + " ");
-                value = value * (i - k) / (k + 1);
+            for(int j = i; j >= 1; j--){
+                System.out.print(j);
+            }
+
+            for(int j = 2; j <= i; j++){
+                System.out.print(j);
             }
 
             System.out.println();

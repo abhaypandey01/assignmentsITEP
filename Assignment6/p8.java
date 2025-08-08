@@ -28,12 +28,12 @@ class Test{
 
         int start = 0;
 
-        for(int i = 0; i < j; j++){
+        for(int i = 0; i < j; i++){
             arr[start] = pos[i];
             start++;
         }
 
-        for(int i = 0; i < k; j++){
+        for(int i = 0; i < k; i++){
             arr[start] = neg[i];
             start++;
         }
