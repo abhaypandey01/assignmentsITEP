@@ -1,9 +1,8 @@
 class Test{
     public static void  main(String args[]){
         int arr1[] = {1,2,3,4,5};
-        int arr2[] = {5};
+        int arr2[] = {3};
         int arr3[] = {2,3,5};
-        int l = 0, m = 0, n = 0;
 
         System.out.println("Array 1 : ");
 
@@ -23,12 +22,13 @@ class Test{
             System.out.print(" " + element);
         }
 
-        while(l < arr1.length && m < arr2.length && n < arr3.length){
-            if((arr1[l] == arr2[m]) && (arr2[m] == arr3[n]) && (arr1[l] == arr3[n]))
-                System.out.println("The repeating element is " + arr1[l]);
-            l++;
-            m++;
-            n++;
+        for(int i = 0; i < arr1.length; i++){
+            for(int j = 0; j < arr2.length; j++){
+                for(int k = 0; k < arr3.length; k++){
+                    if((arr1[i] == arr2[j]) && (arr2[j] == arr3[k]) && (arr3[k] == arr1[i]))
+                    System.out.print("\nCommont element : " + arr1[i]);
+                }
+            }
         }
     }
 }
