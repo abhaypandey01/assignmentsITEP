@@ -2,7 +2,7 @@ class Test{
     public static void  main(String args[]){
         int arr1[] = {1,2,3,4,5};
         int arr2[] = {3};
-        int arr3[] = {2,3,5};
+        int arr3[] = {2,3};
 
         System.out.println("Array 1 : ");
 

@@ -10,3 +10,4 @@
 - Abstract methods are created in the interface.
 - then they are implemented in the child class.
 - child class must override the abstract of interface.
+- Interface allows us to achieve 

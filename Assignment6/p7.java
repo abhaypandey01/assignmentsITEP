@@ -31,9 +31,10 @@ class Test{
             break;
             }
 
-            if(i == n){
+        }
+
+        if(i == n){
                 System.out.println("Subarray equal to sum not found.");
             }
-        }
     }
 }

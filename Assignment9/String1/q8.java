@@ -9,7 +9,7 @@ class Test{
             if(flag[i]){
                 continue;
             }
-            for(int j = 0; j < ch.length; j++ ){
+            for(int j = i; j < ch.length; j++ ){
                 if(ch[i] == ch[j]){
                     cnt++;
                     flag[j] = true;

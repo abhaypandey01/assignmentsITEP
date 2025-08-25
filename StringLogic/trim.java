@@ -18,8 +18,11 @@ class Test{
     }
 
     public static void main(String aegs[]){
-        String str = "  Abc 123  ";
+        String str = "  Abc  123  ";
+        String str2 = str.trim();
         String n = trimString(str);
         System.out.println(n);
+        System.out.println(str2);
+
     }
 }
