@@ -19,7 +19,7 @@ Explain all OOP features in Java with example.
 
 ## 3️⃣ What are the roles of Setter and Getter methods?  
 What is POJO in Java?  
-**Answer:**  
+**Answer:**  *A pojo is object with all the required contructors, setters and getters*
 
 ---
 

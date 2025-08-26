@@ -15,7 +15,7 @@ class Employee{
         return empNo;
     }
 
-    public static void display()
+    public static void displayTotalSalary()
     {
         System.out.println("Toatal employees are " + count + " and their total salary is " + totalSalary);
     }
