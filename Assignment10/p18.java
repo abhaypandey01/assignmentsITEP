@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class XYZ{
+class Xyz{
     private ArrayList<Product> plist = new ArrayList<Product>();
 
     public int totalSpent(){
@@ -60,7 +60,7 @@ class Product {
 
 class Test{
     public static void main(String args[]){
-        XYZ inventory = new XYZ();
+        Xyz inventory = new Xyz();
         Product p1 = new Product(123, 200, 20);
         inventory.addProduct(p1);
 
