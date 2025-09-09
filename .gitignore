@@ -64,3 +64,14 @@ Savings.class
 SmartDevice.class
 VideoCourse.class
 WashingMachine.class
+NullStringException.class
+Account.class
+Arr.class
+MaxBooksIssuedException.class
+StudentNotFoundException.class
+InsufficientBalanceException.class
+IncorrectPinForThirdTime.class
+Study.class
+Inventory.class
+
+
