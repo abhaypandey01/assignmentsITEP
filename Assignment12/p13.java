@@ -1,23 +1,16 @@
 import java.util.*;
 class Test{
-    public int  input()
+    public int input()
     {
-        int i=0;
         try{
             Scanner sc=new Scanner(System.in);
-             int b=sc.nextInt();
-             return b;
-            
-
+            int b=sc.nextInt();
+            return b;
         }
         catch(InputMismatchException e)
         {
             return input();
         }
-        
-        
-        
-
     }
     public static void main(String args[])
     {

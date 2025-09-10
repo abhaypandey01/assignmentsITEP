@@ -1,15 +1,15 @@
 import java.io.*;
 
 class Test{
-    public static void getIoException throws IOException{
+    public static void getIoException() throws IOException{
         throw new IOException();
     }
 
-    public staticvoid getArithmeticEXception throws ArithmeticException{
+    public static void getArithmeticEXception() throws ArithmeticException{
         throw new ArithmeticException();
     }
 
-    public static void main(String arg[]){
+    public static void main(String arg[]) throws {
         try{
             getIoException();
         }

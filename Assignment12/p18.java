@@ -13,66 +13,67 @@ class Inventory{
         bl.add(b);
     }
 
-    // public void issueBook(int count) throws MaxBooksIssuedException{
-    //     // if(count > (bl.size()-1)) throw new MaxBooksIssuedException();
-    // }
-
     public int  calculate() throws MaxBooksIssuedException{
+        Scanner sc=new Scanner(System.in);
         int res=0;
         for(Arr b : bl){
             
             res=res+b.getpirce();
-
-            // System.out.println(b.display());
-            if(b.getpirce()==0)
+            try{
+                if(b.getpirce()==0)
             {
-                b.setprice(10);
-                throw  new MaxBooksIssuedException();
-                // return 0;
+                // b.setprice(10);
+                throw new MaxBooksIssuedException();
+            }
 
             }
-            
-            
+            catch(MaxBooksIssuedException e)
+            {
+                System.out.println("you have a product whose price is null, select y to set default price. ");
+                char c=sc.nextLine().charAt(0);
+                if(c=='y')
+                {
+                    b.setprice(10);
+                    return calculate();
+                }
+                else
+                {
+                    System.out.println("now plase enter the price by yoursely");
+                    int n=sc.nextInt();
+                    b.setprice(n);
+                    return calculate();
+                }
+            }
         }
         return res;
     }
 }
 
-class Arr{
+class Product{
     private int price;
     private String name;
-    // private String author;
 
 
-    public Arr(int price, String name){
+    public Product(int price, String name){
         this.price = price;
         this.name = name;
-        // this.author = author;
     }
-    public Arr(String name){
+    public Product(String name){
         this.price = price;
         this.name = name;
-        // this.author = author;
     }
+
     public void setprice(int price)
     {
         this.price=price;
     }
 
 
-    public Arr(){}
+    public Product(){}
 
     public int getpirce(){
         return price;
     }
-
-    // public String getTitle(){
-    //     return title;
-    // }
-
-    // public String getAuthor(){
-    //     return author;
-    // }
 
     public String display(){
         return price+" "+name;
@@ -81,21 +82,16 @@ class Arr{
 
 class Test{
     public static void main(String args[]){
-        Arr a = new Arr(1, "bl");
-        Arr b = new Arr( "arushi" );
+        Scanner sc=new Scanner(System.in);
+        Product a = new Product(1, "bl");
+        Product b = new Product( "arushi" );
         Inventory lib = new Inventory();
         lib.addBook(a);
         lib.addBook(b);
 
-        try{
-        // int element = 3;
-        int res=lib.calculate();
-        } catch(MaxBooksIssuedException e){
-        // System.out.println(e);
-        System.out.println("there is a product is list whose price is null we are setting it to default price");
-        int res2=lib.calculate();
-        System.out.println(res2);
+        int i=lib.calculate();
+        System.out.println(i);
 
-        }
+        
     }
 }

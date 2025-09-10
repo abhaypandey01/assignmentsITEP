@@ -43,11 +43,10 @@ class Student{
 class Test{
     public static void main(String arg[]){
         Student st1 = new Student(1, "Prem");
-        Student st2;
         Study s1 = new Study();
         s1.addStudent(st1);
         try{
-            s1.fetchStudent(2);
+            s1.fetchStudent(1);
             // System.out.println(sname);
         } catch(StudentNotFoundException e){
             e.printStackTrace();
