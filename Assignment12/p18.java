@@ -22,7 +22,6 @@ class Inventory{
             try{
                 if(b.getpirce()==0)
             {
-                // b.setprice(10);
                 throw new MaxBooksIssuedException();
             }
 
