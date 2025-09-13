@@ -73,8 +73,6 @@ InsufficientBalanceException.class
 IncorrectPinForThirdTime.class
 Study.class
 Inventory.class
-InvalidAgeException.class
+InvalidAge.class
 UnderAgeException.class
-ProductQuantityNull.class
-
-
+ProductQuanityNull.class
