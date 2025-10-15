@@ -7,7 +7,7 @@ class Test {
         n = sc.nextInt();
     
         while(i < n){
-            a = (int)(Math.pow(10,i)+a);
+            a = a * 10 + 1;
             sum += a;
             i++;
         }

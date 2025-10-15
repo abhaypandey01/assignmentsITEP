@@ -23,7 +23,6 @@ class PC
         {
         System.out.println(Thread.currentThread().getName()+" "+"the consumer is ordering");
 
-
         }
 
     }
