@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Timecard</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1.1em;
+  }
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  thead tr:first-of-type th {
+    background-color: #f08a44;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  thead tr:last-of-type th {
+    background-color: #fdf2e9; 
+    font-weight: bold;
+    border-bottom: 2px solid #f08a44;
+  }
+  
+  tbody td {
+    border-bottom: 1px solid #e0e0e0; 
+  }
+  
+  tfoot {
+    background-color: #566573;
+    color: white;
+    font-weight: bold;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Employee Timecard</th>
+    </tr>
+    <tr>
+      <th>Day</th>
+      <th>Regular</th>
+      <th>Overtime</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monday</td>
+      <td>8</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>8</td>
+      <td>2.5</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td>8</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>8</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>8</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Saturday</td>
+      <td>0</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total weekly hours:</th>
+      <td>40</td>
+      <td>8.5</td>
+      <td>48.5</td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
