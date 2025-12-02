@@ -1,0 +1,93 @@
+/* Base Styles */
+:root {
+    --primary-color: #ffc107; /* Bootstrap Warning/Yellow */
+    --dark-bg: #212529; /* Bootstrap Dark */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-bg);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://i.imgur.com/0dJz8g7.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.hero-section .navbar-nav .nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.hero-section .navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* --- Service Cards --- */
+.service-card {
+    border: none;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+
+.service-card i {
+    color: var(--dark-bg);
+}
+
+.service-card-yellow {
+    background-color: var(--primary-color);
+}
+
+.service-card-dark {
+    background-color: var(--dark-bg);
+}
+
+.service-card-dark i {
+    color: var(--primary-color);
+}
+
+/* --- About Section Image --- */
+.about-img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* --- Call to Action Section --- */
+.cta-section {
+    background: var(--dark-bg);
+    background-image: url('https://i.imgur.com/aU1W3cR.png'); /* Subtle background pattern */
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Footer Section --- */
+.footer-section {
+    background-color: var(--dark-bg);
+    color: white;
+}
+
+.footer-section h5 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-section .form-control {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: white;
+}
+.footer-section .form-control::placeholder {
+    color: #ced4da;
+}
+
+.footer-section .social-icons a:hover {
+    color: var(--primary-color) !important;
+}

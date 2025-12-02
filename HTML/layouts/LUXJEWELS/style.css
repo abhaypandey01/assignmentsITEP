@@ -1,0 +1,137 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: black;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(36, 40, 40);
+    /* border: 1px solid white;
+     */
+    position: sticky;
+    top: 0;
+    height: 60px;
+}
+
+nav .logo{
+    width: 30%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 20px;
+    width: 70%;
+    /* border: 1px solid white; */
+}
+
+.menu div{
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-transform: uppercase;
+    transition: all 0.5s ;
+}
+
+.menu button {
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-transform: uppercase;
+    background-color: magenta;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.menu div:hover{
+    color: magenta;
+}
+
+.section-1{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .left{
+    width: 50%;
+}
+
+.section-1 .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5%;
+}
+
+.section-1 .right h1{
+    font-size: 60px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+
+.section-1 .right h1 span{
+    color: magenta;
+}
+
+.section-1 .right button:nth-child(1){
+    background-color: rgb(108, 66, 108);
+    width: 160px;
+    border: 1px solid magenta;
+    padding: 10px;
+    color: magenta;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.section-1 .right .btn-b button:nth-child(1){
+    background-color: magenta;
+    width: 160px;
+    border: 1px solid magenta;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.section-1 .right .btn-b button:nth-child(2){
+    background: transparent;
+    width: 160px;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    margin: 5px;
+}

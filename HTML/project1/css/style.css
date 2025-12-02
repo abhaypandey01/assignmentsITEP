@@ -1,0 +1,99 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.main-container {
+    background-color: black;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span {
+    -webkit-backdrop-filter: transparent;
+    -webkit-text-fill-color: limegreen;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: limegreen;
+    border-radius: 50%;
+}
+
+.menu {
+    /* border: 1px solid red; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.menu-item {
+    padding-right: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.menu .btn {
+    background-color: limegreen;
+    border-radius: 20px;
+    padding: 5px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-weight: 600;
+}
+
+.section-1 {
+    border: 1px solid red;
+    min-height: 700px;
+    display: flex;
+}
+
+.section-1 .left{
+    border: 1px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.section-1 .right{
+    border: 1px solid red;
+    width: 50%;
+}
+
+.section-1 .left h1{
+    font-size: 80px;
+    word-wrap: normal;
+    word-spacing: 8px;
+    letter-spacing: 1.5px;
+    /* line-spacing: 5px; */
+}
+
+.section-1 .left h1 span {
+    color: limegreen;
+}

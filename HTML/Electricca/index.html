@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .nav1{
+            background-color: #F9B116;
+            height: 70px;
+            color: white;
+        }
+
+        .nav1 .logo{
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        .nav1 .menu {
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            padding-right: 50px;
+        }
+
+        .menu div{
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .menu div:hover{
+            color: #000;
+        }
+
+        .section-1{
+            min-height: 65vh;
+            background-color: aqua;
+        }
+
+        .section-1 h1{
+            font-size: 70px;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        .section-1 p{
+            font-size: 18px;
+        }
+
+        .read-more{
+            background-color: #F9B116;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .section-2, .section-3{
+            min-height: 100vh;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .section-2 div span, .section-3 div span{
+            font-size: 50px;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 5%;
+        }
+
+        .section-2 div span::after, .section-3 div span::after{
+            position: absolute;
+            content: "";
+            height: 10px;
+            width: 60px;
+            background-color: #F9B116;
+            bottom: -7px;
+            left: 47%;
+            border-radius: 5px;
+        }
+
+        .card-1{
+            margin-top: 5%;
+        }
+
+        .card1 div{
+            background-color: #F9B116;
+            border-radius: 10px;
+
+        }
+
+        .card1 div p{
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="nav1 row d-flex justify-content-between align-item-center">
+            <div class="logo col-md-3 d-flex justify-content-end align-item-center">Electricca</div>
+            <div class="menu col-md-9 d-flex align-items-center justify-content-around">
+                <div>HOME</div>
+                <div>ABOUT US</div>
+                <div>SERVICES</div>
+                <div>TESTIMONIAL</div>
+                <div>BLOG</div>
+                <div>CONTACT US</div>
+            </div>
+        </div>
+
+
+        <!-- section1 -->
+        <div class="section-1 d-flex flex-column justify-content-center align-items-center gap-5">
+            <h1>ELECTRICITY SERVICE</h1>
+            <p>Anything embarrassing hidden in the middle of text. All the Lorem Ipsuanything embarrassing h</p>
+            <button class="read-more py-3" style="width: 150px;">READ MORE</button>
+        </div>
+
+        <!-- section-2 -->
+        <div class="section-2 d-flex align-items-center justify-content-center text-center">
+            
+            <div class="container row d-flex align-items-center justify-content-center">
+                <span>Our Services</span>
+                <div class="card1 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center justify-content-around py-4 mb-4 px-4">
+                        <h1>Residential Services</h1>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything</p>
+
+                    </div>
+                    <button class="read-more  py-3" style="width: 150px; color: white; background-color: #000;">READ MORE</button>
+                </div>
+
+                <div class="card1 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center justify-content-around py-4 mb-4 px-4">
+                        <h1>Residential Services</h1>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything</p>
+
+                    </div>
+                    <button class="read-more  py-3" style="width: 150px; color: white; background-color: #000;">READ MORE</button>
+                </div>
+
+                <div class="card1 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center justify-content-around py-4 mb-4 px-4">
+                        <h1>Residential Services</h1>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything</p>
+
+                    </div>
+                    <button class="read-more  py-3" style="width: 150px; color: white; background-color: #000;">READ MORE</button>
+                </div>
+
+                <div class="card1 col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column align-items-center justify-content-around py-4 mb-4 px-4">
+                        <h1>Residential Services</h1>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything</p>
+
+                    </div>
+                    <button class="read-more  py-3" style="width: 150px; color: white; background-color: #000;">READ MORE</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- section-3 -->
+        <div class="section-3 d-flex align-items-center justify-content-center">
+            <div class="row text-center">
+                <span>About Our electricity Company</span>
+            </div>
+            <div class="row">
+                <div class="container col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
